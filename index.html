@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>classes</title>
+        <script>
+            //i can write JS code before the closing of head tag
+        </script>
+    </head>
+    
+    <body>
+        <p></p>
+        
+        <script>
+            //class is used to group something
+            class MyClassA{ //class name must be in PascalCase
+                myClassA(){ // class name must be in camelCase
+                    console.log("myclassA");
+                }
+            }
+            /*
+            let object =  new ClassName(); 
+            */
+            let objA = new MyClassA();
+            //obj.method
+            objA.myClassA();
+        
+
+            class MyClassB{
+                myClassB(){
+                    document.write("myclassB")
+                }
+            }
+            let objB = new MyClassB();
+            objB.myClassB();
+
+            class MyClassC{
+                myClassC(){
+                    window.alert("myclassC")
+                }
+            }
+            let objC = new MyClassC();
+            objC.myClassC();
+
+            class MyClassD{
+                myClasssD(){
+                    document.querySelector("p").innerHTML = "myclassD";
+                }
+            }
+            let objD = new MyClassD();
+            objD.myClasssD();
+
+            //i can write JS code before the closing of body tag
+        </script>
+    </body>
+</html>
