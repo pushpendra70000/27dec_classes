@@ -6,20 +6,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>classes</title>
         <script>
-            //i can write JS code before the closing of head tag
+            //we can write JS code before the closing of head tag
         </script>
     </head>
     
     <body>
         <p></p>
+        <h1></h1>
+        <hr>
+        <h2></h2>
         
         <script>
+            //functions
+            function addition (x,z=5*y){
+                document.write(x+z)
+            }
+            addition(2,3)
+
             //class is used to group something
-            class MyClassA{ //class name must be in PascalCase
-                myClassA(){ // class name must be in camelCase
+            class MyClassA{ //classname must be in PascalCase
+                myClassA(){ // method name must be in camelCase
                     console.log("myclassA");
                 }
             }
+            document.write('<br> </br>')
             /*
             let object =  new ClassName(); 
             */
@@ -27,7 +37,7 @@
             //obj.method
             objA.myClassA();
         
-
+            
             class MyClassB{
                 myClassB(){
                     document.write("myclassB")
@@ -36,9 +46,11 @@
             let objB = new MyClassB();
             objB.myClassB();
 
+            document.write('<br> </br>')
+            
             class MyClassC{
                 myClassC(){
-                    window.alert("myclassC")
+                window.alert("myclassC")
                 }
             }
             let objC = new MyClassC();
@@ -51,6 +63,137 @@
             }
             let objD = new MyClassD();
             objD.myClasssD();
+            
+            class MyClassE{
+
+                //method
+                addition(x,y){
+                    console.log(x+y)
+                }
+            }
+            const objE = new MyClassE();
+            objE.addition(2,4);
+
+            class MyClassF{
+                substraction(x,y){
+                    document.write(x-y)
+                }
+                division(a,b){
+                    document.querySelector("h1").innerHTML = a/b
+                }
+            }
+            var objF = new MyClassF();
+            objF.substraction(100,50)
+            objF.division(100,50)
+        
+            class MyClassG{
+                multiplication(x,y){
+                    document.querySelector("h2").innerHTML = x*y
+                }
+            }
+            let objG = new MyClassG();
+            objG.multiplication(20,30)
+
+            document.write("<br> </br>");
+
+            class MyClassH{
+                myClassH(name, surname){
+                    document.write(name," ",surname)
+                }
+            }
+            let objH = new MyClassH();
+            objH.myClassH('pushpendra','thorecha');
+
+            // creating element through JS
+            class MyClassI{
+                myClassI(){
+                    const h1 = document.createElement("h1");
+                    h1.innerHTML = "hello from class I"
+
+                    document.body.appendChild(h1);
+                }
+            }
+            let objI = new MyClassI();
+            objI.myClassI();
+
+            class MyClassJ{
+                myClassJ(x,y){
+                    //console.log(x,y)
+                    let h1 = document.createElement("h1");
+                    h1.innerHTML =x+y;
+                    
+                    document.body.appendChild(h1);
+                }    
+            }
+            let objJ = new MyClassJ();
+            objJ.myClassJ(1,2);
+
+            class MyClassK{
+                myClassK(x,y){
+                    let X = parseFloat(x);
+                    let Y = parseFloat(y);
+                    console.log(X+Y);
+                }
+            }
+            let objK = new MyClassK();
+            objK.myClassK("2","3");
+
+            class MyClassL{
+                myClassL(x,y){
+                    const X = parseFloat(x);
+                    const Y = parseFloat(y);
+
+                    var h2 = document.createElement("h2");
+                    h2.innerHTML = X*Y
+                    
+                    document.body.appendChild(h2);
+                }
+            }
+            let objL = new MyClassL();
+            objL.myClassL("7","9");
+
+            class MyClassM{
+
+            }
+            class MyClassN{
+
+            }
+            class MyClassO{
+
+            }
+            class MyClassP{
+
+            }
+            class MyClassQ{
+
+            }
+            class MyClassR{
+
+            }
+            class MyClassS{
+
+            }
+            class MyClassT{
+
+            }
+            class MyClassU{
+
+            }
+            class MyClassV{
+
+            }
+            class MyClassW{
+
+            }
+            class MyClassX{
+
+            }
+            class MyClassY{
+
+            }
+            class MyClassZ{
+
+            }
 
             //i can write JS code before the closing of body tag
         </script>
